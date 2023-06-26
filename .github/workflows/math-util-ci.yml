@@ -13,10 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Set up JDK 19 - Cài JDK lên server người mượn ở Mỹ
+    - name: Set up JDK 8.0 - Cài JDK lên server người mượn ở Mỹ
       uses: actions/setup-java@v3
       with:
-        java-version: '8.o'
+        java-version: '8.0'
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven - Mượn maven của server Mỹ build app giùm
